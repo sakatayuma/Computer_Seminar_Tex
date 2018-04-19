@@ -1,5 +1,50 @@
-\documentclass[a4paper,12pt]{article}
-
+\documentclass[a4paper,12pt]{jarticle}
+\usepackage{amsmath}
 \begin{document}
-ABCD
+
+\begin{center}
+{\large コンピュータゼミ2018宿題}
+\end{center}
+
+\section{1章}
+{\small \noindent 私達の研究室ではおもにシステムやソフトウェアの信頼性に関する研究を行っています。
+おもにそれらを確率論によってモデル化し、解析することで信頼性の評価を行います。
+
+  具体的には以下の様な確率過程を用いることが多いです。}
+\begin{itemize}
+\item NHPP
+\item CTMC
+\end{itemize}
+\section{2章}
+
+\noindent 卒業論文や現行の作成のさいには \LaTeX を使って文章を作成します。 \LaTeX は数式などを含むような文章を綺麗に作成するための言語です。
+
+\section{3章}
+\noindent 確率変数$X$が指数分布に従うとき、その分布関数$F_X(t)$と密度関数$f_X(t)$は、
+
+\begin{align}
+F_X(t) &= 1-e^{-\lambda t}\\\label{one}
+f_X(t) &= \lambda e^{-\lambda t}
+\end{align}
+
+となる。またその期待値は定義より、
+
+\begin{align}
+E[X] &= \int_{0}^{\infty} tfx(t) dt\nonumber\\
+&= [(1 - e^{-\lambda t}) t ]_{0}^{\infty} - \int_{0}^{\infty}(1 - \lambda^{-\lambda t}) dt\nonumber\\
+&= [(1 - e^{-\lambda t}) t ]_{0}^{\infty} - [t + \frac{1}{\lambda} e^{-\lambda t}]_{0}^{\infty}\nonumber\\
+&= \frac{1}{\lambda}\label{three}
+\end{align}
+となる。(extra宿題:(\ref{three})を導出してみよう ヒント:部分積分)
+
+\section{4章}
+\noindent 表を作ることもできます
+\begin{center}
+\begin{tabular}{|c|c|c|}\hline
+1 & 2 &3 \\\hline
+\alpha & \beta & \gamma \\\hline
+\end{tabular}
+\end{center}
+
 \end{document}
+
